@@ -11,6 +11,5 @@ public class BaseTest {
     @BeforeClass
     public static void setUp(){
         RestAssured.baseURI = BaseURI.PROD+BaseURI.API_VERSION;
-
     }
 }

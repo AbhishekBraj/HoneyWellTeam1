@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.honeywell.team1.HoneywellTeam1.alphatest.PetTests">
+      <class name="store.GetOrderId">
         <methods>
-          <include name="tearDown"/>
-          <include name="findByStatus"/>
+          <include name="placeOrder"/>
         </methods>
-      </class> <!-- com.honeywell.team1.HoneywellTeam1.alphatest.PetTests -->
+      </class> <!-- store.GetOrderId -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

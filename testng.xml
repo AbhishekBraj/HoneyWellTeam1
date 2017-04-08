@@ -3,7 +3,12 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
+      <class name="store.DeleteOrderId"/>
       <class name="com.honeywell.team1.HoneywellTeam1.alphatest.PetTests"/>
+      <class name="store.GetOrderId"/>
+      <class name="store.PostStoreOrder"/>
+      <class name="store.GetStoreInventory"/>
+      <class name="com.honeywell.team1.HoneywellTeam1.utils.BaseTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

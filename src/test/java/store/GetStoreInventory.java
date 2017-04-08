@@ -1,5 +1,7 @@
 package store;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static io.restassured.RestAssured.*;
 import io.restassured.response.ResponseBody;
 import static org.testng.Assert.*;
@@ -15,10 +17,10 @@ public class GetStoreInventory extends BaseTest{
     @Test
     public void getStatus(){
         ResponseBody resBody = given().
-                when().
-                get(BasePath.getInventory()).
-                thenReturn().body();
+                				when().
+                					get(BasePath.getInventory()).
+                					thenReturn().body();
 
-        assertEquals(resBody.jsonPath().get("stud"), 1);
+        AssertJUnit.assertEquals(resBody.jsonPath().get("stud"), 1);
     }
 }

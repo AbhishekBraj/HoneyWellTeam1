@@ -1,5 +1,7 @@
 package store;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
@@ -20,7 +22,7 @@ public class PostStoreOrder {
                 baseUri(BaseURI.PROD+BaseURI.API_VERSION).
                 basePath(BasePath.postOrder()).
                 body("{\n" +
-                "  \"id\": 0,\n" +
+                "  \"id\": 9087,\n" +
                 "  \"petId\": 0,\n" +
                 "  \"quantity\": 0,\n" +
                 "  \"shipDate\": \"2017-04-08T07:36:25.412Z\",\n" +
@@ -33,7 +35,7 @@ public class PostStoreOrder {
 
         System.out.println(response.asString());
 
-        assertEquals("placed", response.jsonPath().get("status").toString());
-        assertEquals("true", response.jsonPath().get("complete").toString());
+        AssertJUnit.assertEquals("placed", response.jsonPath().get("status").toString());
+        AssertJUnit.assertEquals("true", response.jsonPath().get("complete").toString());
     }
 }

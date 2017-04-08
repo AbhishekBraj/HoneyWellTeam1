@@ -1,16 +1,15 @@
 package com.honeywell.team1.HoneywellTeam1.alphatest;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static io.restassured.RestAssured.*;
-
 import java.io.File;
-
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-
-import com.honeywell.team1.HoneywellTeam1.Util;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -47,36 +46,6 @@ public class PetTests {
 	  Assert.assertTrue(response.getStatusCode()==200 || response.getStatusCode()==201 , "Response status code is not as expected.");
 	  Assert.assertTrue(actualName.equalsIgnoreCase("Updated_Doggie"), "Pet Name is not updated.Expected Name::"+ "Updated_Doggie." +" Actual text"+ actualName);
 	  
-  }
-  
- /* @Test
-  public void findByStatus()
-  {
-	  test = extent.startTest("Find By Status Test");
-	  String[] values = {"200","400"};
-	  response = given().contentType(ContentType.ANY).body(values).when().get("http://petstore.swagger.io/v2/pet/findByStatus").thenReturn();
-	  System.out.println(response.body().asString());
-  }*/
-  
- /* @AfterMethod
-  protected void afterMethod(ITestResult result) {
-      if (result.getStatus() == ITestResult.FAILURE) {
-          test.log(LogStatus.FAIL, result.getThrowable());
-      } else if (result.getStatus() == ITestResult.SKIP) {
-          test.log(LogStatus.SKIP, "Test skipped " + result.getThrowable());
-      } else {
-          test.log(LogStatus.PASS, "Test passed");
-      }
-      
-      extent.endTest(test);        
-      extent.flush();
-      
-  }*/
- 
-  @AfterTest
-  public void tearDown()
-  {
-	  //extent.close();
   }
   
 }
