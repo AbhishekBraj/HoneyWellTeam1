@@ -2,42 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3702" started-at="2017-04-08T09:02:20Z" finished-at="2017-04-08T09:02:24Z">
+  <suite name="Default suite" duration-ms="3189" started-at="2017-04-08T09:06:55Z" finished-at="2017-04-08T09:06:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3702" started-at="2017-04-08T09:02:20Z" finished-at="2017-04-08T09:02:24Z">
+    <test name="Default test" duration-ms="3189" started-at="2017-04-08T09:06:55Z" finished-at="2017-04-08T09:06:59Z">
       <class name="com.honeywell.team1.HoneywellTeam1.alphatest.PetTests">
-        <test-method status="PASS" signature="addNewPetPost()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@51cdd8a]" name="addNewPetPost" duration-ms="1969" started-at="2017-04-08T14:32:20Z" finished-at="2017-04-08T14:32:22Z">
+        <test-method status="PASS" signature="addNewPetPost()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@20e2cbe0]" name="addNewPetPost" duration-ms="1966" started-at="2017-04-08T14:36:55Z" finished-at="2017-04-08T14:36:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewPetPost -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@51cdd8a]" name="afterMethod" is-config="true" duration-ms="402" started-at="2017-04-08T14:32:22Z" finished-at="2017-04-08T14:32:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addNewPetPost status=SUCCESS method=PetTests.addNewPetPost()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@51cdd8a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="updatePetPut()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@51cdd8a]" name="updatePetPut" duration-ms="1211" started-at="2017-04-08T14:32:23Z" finished-at="2017-04-08T14:32:24Z">
+        <test-method status="PASS" signature="updatePetPut()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@20e2cbe0]" name="updatePetPut" duration-ms="1195" started-at="2017-04-08T14:36:57Z" finished-at="2017-04-08T14:36:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePetPut -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@51cdd8a]" name="afterMethod" is-config="true" duration-ms="52" started-at="2017-04-08T14:32:24Z" finished-at="2017-04-08T14:32:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updatePetPut status=SUCCESS method=PetTests.updatePetPut()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@51cdd8a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@51cdd8a]" name="tearDown" is-config="true" duration-ms="43" started-at="2017-04-08T14:32:24Z" finished-at="2017-04-08T14:32:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.PetTests@20e2cbe0]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-08T14:36:59Z" finished-at="2017-04-08T14:36:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

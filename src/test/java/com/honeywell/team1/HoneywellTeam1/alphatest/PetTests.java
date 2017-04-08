@@ -20,14 +20,14 @@ import io.restassured.response.Response;
 
 public class PetTests {
   
- ExtentTest test;	
+ //ExtentTest test;	
  File file;
  Response response;
- ExtentReports extent = new ExtentReports("Extent.html",true);
+ //ExtentReports extent = new ExtentReports("Extent.html",true);
  
   @Test()
   public void addNewPetPost() {
-	  test = extent.startTest("Add new Pet Test");
+	  //test = extent.startTest("Add new Pet Test");
 	  file = new File(System.getProperty("user.dir")+ "//resources//petAddTest.json");
 	  response = given().contentType("application/json").body(file).when().post("http://petstore.swagger.io/v2/pet").thenReturn();
 	  Assert.assertTrue(response.getStatusCode()==200 || response.getStatusCode()==201 , "Response status code is not as expected.");
@@ -38,7 +38,7 @@ public class PetTests {
   @Test
   public void  updatePetPut()
   {
-	  test = extent.startTest("Update Pet Details Test");
+	  //test = extent.startTest("Update Pet Details Test");
 	  file = new File(System.getProperty("user.dir")+ "//resources//petUpdateExistingPet.json");
 	  response = given().contentType("application/json").body(file).when().put("http://petstore.swagger.io/v2/pet").thenReturn();
 	  System.out.println(response.getBody().asString());
@@ -58,7 +58,7 @@ public class PetTests {
 	  System.out.println(response.body().asString());
   }*/
   
-  @AfterMethod
+ /* @AfterMethod
   protected void afterMethod(ITestResult result) {
       if (result.getStatus() == ITestResult.FAILURE) {
           test.log(LogStatus.FAIL, result.getThrowable());
@@ -71,12 +71,12 @@ public class PetTests {
       extent.endTest(test);        
       extent.flush();
       
-  }
+  }*/
  
   @AfterTest
   public void tearDown()
   {
-	  extent.close();
+	  //extent.close();
   }
   
 }
