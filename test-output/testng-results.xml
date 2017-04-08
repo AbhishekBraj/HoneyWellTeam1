@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5112" started-at="2017-04-08T05:54:28Z" finished-at="2017-04-08T05:54:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5112" started-at="2017-04-08T05:54:28Z" finished-at="2017-04-08T05:54:33Z">
+      <class name="com.honeywell.team1.HoneywellTeam1.alphatest.NewTest">
+        <test-method status="PASS" signature="getPets()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.NewTest@5d5eef3d]" name="getPets" duration-ms="3774" started-at="2017-04-08T11:24:28Z" finished-at="2017-04-08T11:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPets -->
+        <test-method status="PASS" signature="inventoryGet()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.NewTest@5d5eef3d]" name="inventoryGet" duration-ms="670" started-at="2017-04-08T11:24:32Z" finished-at="2017-04-08T11:24:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inventoryGet -->
+        <test-method status="PASS" signature="testAssertionsInRestAssured()[pri:0, instance:com.honeywell.team1.HoneywellTeam1.alphatest.NewTest@5d5eef3d]" name="testAssertionsInRestAssured" duration-ms="625" started-at="2017-04-08T11:24:33Z" finished-at="2017-04-08T11:24:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssertionsInRestAssured -->
+      </class> <!-- com.honeywell.team1.HoneywellTeam1.alphatest.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
