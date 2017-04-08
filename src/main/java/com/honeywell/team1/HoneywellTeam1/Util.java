@@ -10,6 +10,6 @@ import io.restassured.response.Response;
 public class Util {
 	
 	public static String baseURL = "http://petstore.swagger.io/v2";
-	public static ExtentReports extent = new ExtentReports("Extent.html", true);
+	
 	
 }

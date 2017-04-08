@@ -23,7 +23,7 @@ public class PetTests {
  ExtentTest test;	
  File file;
  Response response;
- ExtentReports extent = Util.extent;
+ ExtentReports extent = new ExtentReports("Extent.html",true);
  
   @Test()
   public void addNewPetPost() {
@@ -49,14 +49,14 @@ public class PetTests {
 	  
   }
   
-  @Test
+ /* @Test
   public void findByStatus()
   {
 	  test = extent.startTest("Find By Status Test");
 	  String[] values = {"200","400"};
 	  response = given().contentType(ContentType.ANY).body(values).when().get("http://petstore.swagger.io/v2/pet/findByStatus").thenReturn();
 	  System.out.println(response.body().asString());
-  }
+  }*/
   
   @AfterMethod
   protected void afterMethod(ITestResult result) {

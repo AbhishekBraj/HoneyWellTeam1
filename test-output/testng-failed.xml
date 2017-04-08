@@ -5,7 +5,6 @@
     <classes>
       <class name="com.honeywell.team1.HoneywellTeam1.alphatest.PetTests">
         <methods>
-          <include name="afterMethod"/>
           <include name="tearDown"/>
           <include name="findByStatus"/>
         </methods>
